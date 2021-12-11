@@ -1,6 +1,6 @@
-# SainSmart Genmitsu 3018-PRO x-axis limit switch
+# SainSmart Genmitsu 3018-PRO X-Axis Limit Switch
 
-X-axis limiter is based on two sub miniature leaf spring switches to sense when the spindle has reached the edge of the x-axis.
+X-axis limiter based on two sub miniature leaf spring switches to sense when the spindle has reached the edge of the x-axis.
 This leaves only a couple of millimeters to the edge of the x-axis on either side.
 The switches are mounted to the frame with the original M5x16 screws and can thus be fitted with no manipulation of the frame.
 
@@ -15,13 +15,18 @@ This design consists of two files; x-axis-limit-switch-left and x-axis-limit-swi
 The limit switch holder is designed around a sub miniature leaf spring switch with dimensions of approx. 6.5 x 12.8 x 5.8mm.
 Example model that should fit this design: [CYT1073](https://www.amazon.com/Cylewet-25Pcs-Switch-Arduino-CYT1073/dp/B073TYWX86).
 
+![Switch](https://github.com/TheOftedal/3018-pro-cnc-upgrades/blob/main/x-axis-limit-switches/Images/switch.jpg)
+
 ### Cables
 
-Any pair of low power cables should suffice for this application. However it is recommended to use a maximum cable dimension of 1.5mm2 to make it easier to solder them onto the tiny switch contacts.
+Any pair of low power cables should suffice for this application.
+I do however recommend using a maximum cable dimension of 1.5mm2 to make it easier to solder them onto the micro switch contacts.
 
-### Contacts
+### Connectors
 
-The original Genmitsu 3018-PRO control board has a standard dupont pinout for the limit switch connectors and it is therefore recommended to use a dupont crimping tool and connectors to connect the switches to the control board.
+The original Genmitsu 3018-PRO control board has a standard dupont pinout for the limit switch connectors and it is therefore recommended to use a dupont crimping tool and 2-pin female connectors to connect the switches to the control board.
+
+![Switch](https://github.com/TheOftedal/3018-pro-cnc-upgrades/blob/main/x-axis-limit-switches/Images/dupont.jpg)
 
 ## How to
 
@@ -50,6 +55,7 @@ Solder the cables to the C (Common) and NO (Normally Open) pins of the switch. I
 ### Step 3 - Mount the switches to the 3D-printed holders
 
 Fit the cables and switches through the hole of the 3D-printed holders making sure the switch leaf spring is pointing downwards.
+The switch should snap into place and be helt snuggly by friction. If the switch is loose, apply some superglue to the switch before fitting it in the socket.
 
 ![Fitting](https://github.com/TheOftedal/3018-pro-cnc-upgrades/blob/main/x-axis-limit-switches/Images/step-3.jpg)
 
